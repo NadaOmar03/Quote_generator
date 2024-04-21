@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Quote of the day</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="quote-box">
+        <h2>Quote of the day</h2>
+        <blockquote id="quote">loading...</blockquote>
+        <span id="author">loading...</span>
+        <div>
+            <!-- Corrected icon structure -->
+            <button onclick="readQuote()"><i class="fas fa-volume-up icon-speaker"></i>Listen</button>
+            <button onclick="tweet()"><i class="fab fa-twitter icon-twitter"></i> Tweet</button>
+            <button onclick="getQuote(api_url)">New Quote</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
