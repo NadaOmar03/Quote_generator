@@ -17,10 +17,11 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .quote-box {
     background: rgb(250, 248, 250);
+    max-width: 700px; /* Changed to max-width for responsiveness */
     width: 90%; /* Changed width to percentage for responsiveness */
-    max-width: 700px; /* Changed to max-width for larger screens */
     padding: 40px;
     border-radius: 10px;
     text-align: center;
@@ -92,7 +93,6 @@ body {
 /* Added media query for responsiveness */
 @media only screen and (max-width: 600px) {
     .quote-box {
-        width: 100%; /* Fill the screen on smaller devices */
         padding: 20px;
     }
 
