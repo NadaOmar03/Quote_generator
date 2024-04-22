@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+
+
+body {
+    background-image: url('quotes.jpg');
+    background-size: cover; /* Changed to cover for better responsiveness */
+    height: 100vh;
+    margin: 0; /* Added to reset default margin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-box {
+    background: rgb(250, 248, 250);
+    max-width: 700px; /* Changed to max-width for responsiveness */
+    width: 90%; /* Changed width to percentage for responsiveness */
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.15);
+}
+.quote-box h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.quote-box h2::after {
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(54, 2, 2);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.quote-box blockquote {
+    font-size: 26px;
+    min-height: 110px;
+}
+
+.quote-box span {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.quote-box span::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(45, 2, 2);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    text-align: center;
+    justify-content: center;
+}
+
+.quote-box div {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.quote-box button {
+    background: rgb(45, 2, 2);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(45, 2, 2);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Added media query for responsiveness */
+@media only screen and (max-width: 600px) {
+    .quote-box {
+        padding: 20px;
+    }
+
+    .quote-box h2 {
+        font-size: 24px;
+    }
+
+    .quote-box blockquote {
+        font-size: 20px;
+    }
+
+    .quote-box div {
+        flex-direction: column;
+    }
+
+    .quote-box button {
+        width: 100%;
+    }
+}
